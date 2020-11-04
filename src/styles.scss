@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body, html {
+    height: 100%;
+    margin:0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #c7c4c4 inset !important;
+}
+
+.title{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 67px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.sub-title{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Sigupn & Login Page Shared styles */
+
+.form-container{
+    background: url(/assets/img/Untitled.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    color: white;
+        .form-top{
+            text-align: center;
+
+            .icon-login{
+                text-align: center;
+
+                .fa-facebook-f{
+                    background-color:  rgba(6, 15, 53, 0.87);;
+                }
+                
+                .fa-google-plus-g{
+                    background-color: #F76C6C;
+                }
+
+                .icon{
+                
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 50px;
+                    vertical-align: middle;
+                    padding: 15px;
+                    color: white;
+            }
+            }
+        }
+
+        form{
+            label{
+                margin-bottom: 0px;
+                color: #B0A9A9;
+                font-size: 15pxx;
+            }
+            input{
+            height: calc(1.8em + 0.95rem + 5px);
+            background-color: #c7c4c4;
+            color: white;
+            }
+            p{
+                text-align: center;
+                font-size: 15px;
+                
+                margin-left: 30%;
+                margin-right: 30%;
+                margin-bottom: 0px;
+            }
+
+            .btn {
+            font-weight: bold;
+            border: none;
+            letter-spacing: 2px;
+            color: white;
+            height: 48px;
+            border-radius: 50px;
+            display:block;
+            margin: 0 auto;
+            }
+            
+        }
+
+        .li{
+            color: #B0A9A9;
+            border-bottom: 0.5px solid #CEC5C5;
+
+        }
+
+        .nb{
+            color: #FFE150;
+            text-align: center;
+        }
+
+}
+
+@media only screen and (min-width: 1360px) {
+
+       
+    .form-container{
+       height: 100%;
+    }
+}
+
+
+

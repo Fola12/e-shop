@@ -1,0 +1,45 @@
+
+<div class="form-container">
+    <div class="container ">
+        <div class="form-top pb-2">
+            <h3 class="title mb-3">Sign In to E-Shop</h3>
+            <div class="icon-login mb-4">
+                <i class="fab fa-google-plus-g icon mr-5"></i>
+                <i class="fab fa-facebook-f icon"></i>
+            </div>
+            <p>or use your Email Account</p>
+        </div>
+        <form [formGroup]="signUpForm" class="form-group sub-title">
+            <div class="form-row">
+                <div class="form-group col-md-6 pr-3">
+                    <label>UserName</label>
+                    <input type="text" class="form-control" formControlName="displayName" #userdisplayName>
+                </div>
+                <div class="form-group col-md-6 pl-3">
+                    <label>FirstName</label>
+                    <input type="text" class="form-control" formControlName="firstName" #userFirstName>
+                </div>
+                <div class="form-group col-md-6 pr-3">
+                    <label>LastName</label>
+                    <input type="text" class="form-control" formControlName="lastName" #userLastName>
+                </div>
+                <div class="form-group col-md-6 pl-3">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control"  formControlName="email" #userEmail>
+                </div>
+                <div class="form-group col-md-6 pr-3">
+                    <label>Password</label>
+                    <input type="password" class="form-control"  formControlName="password" #password>
+                </div>
+                <div class="form-group col-md-6 pl-3">
+                    <label>Phone Number</label>
+                    <input type="number" class="form-control" formControlName="phoneNo" #userPhoneNo>
+                </div>
+            
+            </div>
+            <button type="submit" class="btn btn-primary mt-4 mb-2" (click)="signUpViaEmail()">Sign up</button>
+            <p>Already have an Account? <a href="dashboard/signin" class="nb">Login</a></p>
+
+        </form>
+  </div>
+</div>

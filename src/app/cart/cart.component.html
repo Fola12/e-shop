@@ -1,0 +1,23 @@
+<p>{{getTotal()}}</p>
+
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Country</th>
+      <th scope="col">Area</th>
+      <th scope="col">Population</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of cartProductList">
+      <th scope="row"></th>
+      <td>
+        {{product.category}}
+      </td>
+      <td>{{ product.count | number }}</td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,25 @@
+<div class="form-container">
+  <div class="container ">
+    <div class="form-top pb-2">
+      <h3 class="title mb-3">Sign In to E-Shop</h3>
+      <div class="icon-login mb-4">
+        <i class="fab fa-google-plus-g icon mr-5"></i>
+        <i class="fab fa-facebook-f icon"></i>
+      </div>
+      <p>or use your Email Account</p>
+    </div>
+    <form class="sub-title">
+      <div class="form-group pb-3 ">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" #userName required>
+      </div>
+      <div class="form-group pb-3">
+        <label for="password">Password</label>
+        <input  type="password" class="form-control"  #userPassword required>
+      </div>
+      <p class="mb-4 pb-1 li"> <a>Forgot your Password? </a></p>
+      <button type="submit" class="btn mb-4" (click)="login(userName.value, userPassword.value)">Log In</button>
+      <p class="nb"> Not a member? <a href="dashboard/signup"></a>SignUp </p>
+    </form>
+  </div>
+</div>
